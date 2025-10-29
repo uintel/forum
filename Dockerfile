@@ -7,4 +7,6 @@ COPY install.sh ./install.sh
 RUN chmod +x install.sh
 RUN chmod +x setup.sh
 
-CMD ["bash", "./install.sh"]
+
+RUN ./install.sh
+RUN rm ./install.sh
